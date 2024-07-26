@@ -1,0 +1,73 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "/types",
+      "/node_modules/@types"
+    ],
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "paths": {
+      "src/*": [
+        "src/*"
+      ],
+      "@interfaces/*": [
+        "types/*"
+      ],
+      "@logger": [
+        "libs/logger.ts"
+      ],
+      "@models": [
+        "models/index.ts"
+      ],
+      "@config": [
+        "config/default.ts"
+      ],
+      "@middlewares/*": [
+        "middlewares/*"
+      ],
+      "@validators/*": [
+        "database/validators/*"
+      ],
+      "@rolecontrollers": [
+        "controllers/roles/index.ts"
+      ],
+      "@usercontrollers": [
+        "controllers/users/index.ts"
+      ],
+      "@attachmentcontrollers": [
+        "controllers/attachments/index.ts"
+      ],
+      "@customerControllers": [
+        "controllers/customers/index.ts"
+      ],
+      "@searchcontrollers": [
+        "controllers/searchs/index.ts"
+      ],
+      "@mockData/*": [
+        "Test/mockData/*"
+      ],
+      "@mail": [
+        "libs/mailer.ts"
+      ]
+    }
+  },
+  "types": [
+    "@types/jest",
+    "node",
+    "jest"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}
